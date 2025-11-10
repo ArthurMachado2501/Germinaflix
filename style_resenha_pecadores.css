@@ -1,0 +1,90 @@
+/* resetando tudo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Poppins", sans-serif;
+}
+
+/* cores principais */
+:root {
+    --azul: #37469C;
+    --lilas: #B3A6EE;
+}
+body {
+    background-color: #eee;
+}
+
+/* header com degrade de lilas->azul*/
+header {
+    width: 100%;
+    height: 50px;
+    padding: 0 50px;
+    background: linear-gradient(90deg, var(--lilas), var(--azul));
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+    margin: 0;
+}
+
+/* div maior, com a img a esquerda e dentro dela uma div menor com o texto a direita */
+#divona {
+    background: linear-gradient(135deg, var(--azul), var(--lilas));
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    height: 400px;
+    margin-top: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+#divona img {
+    width: 175px;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+#divinha {
+    background-color: #c2d2ff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 900px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    color: #1E3A8A;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* div de nota final */
+#div2, #div3 {
+    width: 20%;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+/* cor diferente pra cada uma */
+#div2 {
+    background-color: #c2d2ff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#div3 {
+    background: linear-gradient(90deg, var(--lilas), var(--azul));
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    color: #1E3A8A;
+}
