@@ -1,0 +1,202 @@
+/* resetando tudo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Poppins", sans-serif;
+}
+/* setando as cores que eu vou usar pra eu não ficar repetindo */
+:root {
+    --azul: #37469C;
+    --lilas: #B3A6EE;
+}
+
+body {
+    color: var(--texto);
+    line-height: 1.6;
+    background: #eee;
+}
+
+
+/* estilizando todos os h2 que eu uso como subtitulo */
+h2 {
+    text-align: center;
+    padding: 12px 28px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid transparent;
+    border-radius: 12px;
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, var(--azul), var(--lilas));
+}
+
+
+
+
+
+/* estilizando o header com o degrade de lilas para azul  */
+header {
+    position: relative;
+    height: 320px;
+
+    border-bottom: 8px solid transparent;
+    border-image: linear-gradient(90deg, var(--lilas), var(--azul));
+    border-image-slice: 1;
+
+    background: linear-gradient(90deg,
+        color-mix(in srgb, var(--lilas) 100%, white 5%) 0%,
+        color-mix(in srgb, var(--azul) 100%, black 5%) 100%
+    );
+}
+
+/* Container das fotos usadas no header */
+.header-fotos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.header-fotos img {
+    flex: 1;
+    object-fit: cover;
+
+}
+
+/* Nome estilizado e sobrepondo as imagens */
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Fundo azul translúcido com efeito tipo de vidro */
+    background: color-mix(in srgb, var(--azul) 70%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    border: 2px solid color-mix(in srgb, var(--lilas) 70%, transparent);
+    border-radius: 14px;
+    padding: 12px 40px;
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--lilas);
+    letter-spacing: 2px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+/* sobre mim com a foto e o texto */
+.sobre {
+    display: flex;
+    justify-content: center;
+    padding: 60px 10%;
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.sobre-conteudo img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid var(--lilas);
+    object-fit: cover;
+}
+
+.sobre-conteudo p {
+    max-width: 600px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* sections com minhas curiosidades ou coisas sobre mim */
+.curiosidades {
+    padding: 40px 5%;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.linha div {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    width: 230px;
+    transition: transform 0.3s;
+}
+
+.linha div:hover {
+    transform: scale(1.05);
+}
+
+.linha img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.linha p {
+    text-align: center;
+    padding: 10px;
+    color: var(--azul);
+    font-weight: 600;
+}
+
+/* sections com meus albuns de musica favoritos */
+.musicas {
+    padding: 50px 5%;
+}
+
+.musicas .linha {
+    flex-wrap: wrap;
+}
+
+.musicas img {
+    height: 220px;
+}
+
+/* footer com estilizção e degrade */
+footer {
+    text-align: center;
+    background: var(--azul);
+    color: white;
+    padding: 25px;
+    font-weight: 500;
+    border-top: 4px solid var(--lilas);
+    background: linear-gradient(90deg,
+        var(--lilas) 0%,
+        color-mix(in srgb, var(--lilas) 60%, var(--azul) 40%) 40%,
+        color-mix(in srgb, var(--azul) 80%, var(--lilas) 20%) 70%,
+        var(--azul) 100%
+    );
+}
+
+footer p {
+  display: inline-flex; 
+  align-items: center;
+  gap: 8px; 
+  color: var(--texto);
+}
+
+#insta{
+    height: 15px;
+    width: 15px;
+}
