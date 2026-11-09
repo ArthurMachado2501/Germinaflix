@@ -1,0 +1,3 @@
+lint exit=0
+✓ Links locais OK em 4 página(s).
+links exit=0

@@ -1,0 +1,1 @@
+{"build_type":"workflow","html_url":"https://arthurmachado2501.github.io/Germinaflix/","status":"built"}

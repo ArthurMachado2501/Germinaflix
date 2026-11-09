@@ -1,0 +1,86 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: ci
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Configurar Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Lint de HTML
+        run: npm run lint
+
+      - name: Conferir links locais
+        run: npm run check:links
+
+  deploy:
+    name: deploy
+    needs: ci
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v6
+
+      - name: Montar o site (só HTML, CSS e imgs)
+        run: |
+          mkdir _site
+          cp ./*.html ./*.css _site/
+          cp -r imgs _site/imgs
+
+      - name: Enviar artefato
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: Confirmar que o site está no ar
+        env:
+          URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          for i in 1 2 3 4 5 6; do
+            code=$(curl -s -o page.html -w '%{http_code}' "$URL" || true)
+            echo "tentativa $i: HTTP $code"
+            if [ "$code" = "200" ] && grep -q "Achados do Tutu" page.html; then
+              echo "OK: $URL respondeu 200 com o texto esperado"
+              exit 0
+            fi
+            sleep 10
+          done
+          echo "Falhou: $URL não respondeu 200 com 'Achados do Tutu'"
+          exit 1
