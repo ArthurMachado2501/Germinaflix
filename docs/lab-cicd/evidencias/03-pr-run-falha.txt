@@ -1,0 +1,39 @@
+{"conclusion":"failure","event":"pull_request","jobs":[{"conclusion":"failure","name":"ci"},{"conclusion":"skipped","name":"deploy"}],"url":"https://github.com/ArthurMachado2501/Germinaflix/actions/runs/42605936433"}
+ci	Lint de HTML	﻿2026-11-09T11:03:55.4818128Z ##[group]Run npm run lint
+ci	Lint de HTML	2026-11-09T11:03:55.4818431Z ^[[36;1mnpm run lint^[[0m
+ci	Lint de HTML	2026-11-09T11:03:55.4868882Z shell: /usr/bin/bash -e {0}
+ci	Lint de HTML	2026-11-09T11:03:55.4869144Z ##[endgroup]
+ci	Lint de HTML	2026-11-09T11:03:55.5857218Z 
+ci	Lint de HTML	2026-11-09T11:03:55.5857553Z > germinaflix@1.0.0 lint
+ci	Lint de HTML	2026-11-09T11:03:55.5857884Z > html-validate "*.html"
+ci	Lint de HTML	2026-11-09T11:03:55.5858051Z 
+ci	Lint de HTML	2026-11-09T11:03:56.0157901Z 
+ci	Lint de HTML	2026-11-09T11:03:56.0158815Z /home/runner/work/Germinaflix/Germinaflix/index.html
+ci	Lint de HTML	2026-11-09T11:03:56.0189271Z ##[error]    8:41  error  Meta refresh must be instant (0 second delay)                                               meta-refresh
+ci	Lint de HTML	2026-11-09T11:03:56.0199590Z ##[error]   37:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0202734Z ##[error]   38:33  error  Trailing whitespace                                                                         no-trailing-whitespace
+ci	Lint de HTML	2026-11-09T11:03:56.0205536Z ##[error]   50:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0208757Z ##[error]   60:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0211653Z ##[error]   70:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0214527Z ##[error]   80:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0217747Z ##[error]  101:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0220687Z ##[error]  114:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0223560Z ##[error]  124:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0226633Z ##[error]  134:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0229301Z ##[error]  142:31  error  Trailing whitespace                                                                         no-trailing-whitespace
+ci	Lint de HTML	2026-11-09T11:03:56.0232144Z ##[error]  144:18  error  Landmarks must have a non-empty and unique accessible name (aria-label or aria-labelledby)  unique-landmark
+ci	Lint de HTML	2026-11-09T11:03:56.0234869Z ##[error]  157:10  error  Anchor link must have a text describing its purpose                                         wcag/h30
+ci	Lint de HTML	2026-11-09T11:03:56.0236517Z 
+ci	Lint de HTML	2026-11-09T11:03:56.0236999Z /home/runner/work/Germinaflix/Germinaflix/resenha_pecadores.html
+ci	Lint de HTML	2026-11-09T11:03:56.0238110Z ##[error]  33:56  error  Trailing whitespace  no-trailing-whitespace
+ci	Lint de HTML	2026-11-09T11:03:56.0239269Z 
+ci	Lint de HTML	2026-11-09T11:03:56.0239814Z ✖ 15 problems (15 errors, 0 warnings)
+ci	Lint de HTML	2026-11-09T11:03:56.0240575Z   3 errors and 0 warnings potentially fixable with the `--fix` option.
+ci	Lint de HTML	2026-11-09T11:03:56.0241085Z 
+ci	Lint de HTML	2026-11-09T11:03:56.0241270Z More information:
+ci	Lint de HTML	2026-11-09T11:03:56.0241873Z   https://html-validate.org/rules/meta-refresh.html
+ci	Lint de HTML	2026-11-09T11:03:56.0242611Z   https://html-validate.org/rules/unique-landmark.html
+ci	Lint de HTML	2026-11-09T11:03:56.0243408Z   https://html-validate.org/rules/no-trailing-whitespace.html
+ci	Lint de HTML	2026-11-09T11:03:56.0244148Z   https://html-validate.org/rules/wcag/h30.html
+ci	Lint de HTML	2026-11-09T11:03:56.0244521Z 
+ci	Lint de HTML	2026-11-09T11:03:56.0351958Z ##[error]Process completed with exit code 1.
