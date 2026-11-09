@@ -1,0 +1,25 @@
+  ✓ Configurar Node
+  ✓ Instalar dependências
+  ✓ Lint de HTML
+  ✓ Conferir links locais
+  ✓ Post Configurar Node
+  ✓ Post Checkout
+  ✓ Complete job
+✓ deploy in 15s (ID 129122554383)
+  ✓ Set up job
+  ✓ Checkout
+  ✓ Configurar Pages
+  ✓ Montar o site (só HTML, CSS e imgs)
+  ✓ Enviar artefato
+  ✓ Publicar no GitHub Pages
+  ✓ Confirmar que o site está no ar
+  ✓ Post Checkout
+  ✓ Complete job
+
+ANNOTATIONS
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+ci: .github#1
+
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+deploy: .github#1
+

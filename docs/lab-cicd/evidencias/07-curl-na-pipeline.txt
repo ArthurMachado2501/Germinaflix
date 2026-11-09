@@ -1,0 +1,4 @@
+deploy	Confirmar que o site está no ar	2026-11-09T11:05:36.2613918Z ^[[36;1m  echo "tentativa $i: HTTP $code"^[[0m
+deploy	Confirmar que o site está no ar	2026-11-09T11:05:36.2614616Z ^[[36;1m    echo "OK: $URL respondeu 200 com o texto esperado"^[[0m
+deploy	Confirmar que o site está no ar	2026-11-09T11:05:36.3827761Z tentativa 1: HTTP 200
+deploy	Confirmar que o site está no ar	2026-11-09T11:05:36.3842500Z OK: https://arthurmachado2501.github.io/Germinaflix/ respondeu 200 com o texto esperado

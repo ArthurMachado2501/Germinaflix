@@ -1,0 +1,16 @@
+{"conclusion":"success","event":"pull_request","jobs":[{"conclusion":"success","name":"ci"},{"conclusion":"skipped","name":"deploy"}],"url":"https://github.com/ArthurMachado2501/Germinaflix/actions/runs/42606045502"}
+
+✓ feat/ci-cd CI/CD ArthurMachado2501/Germinaflix#1 · 42606045502
+Triggered via pull_request less than a minute ago
+
+JOBS
+✓ ci in 8s (ID 129122194850)
+- deploy in 0s (ID 129122273543)
+
+ANNOTATIONS
+- "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748"
+ci: .github#1
+
+
+For more information about a job, try: gh run view --job=<job-id>
+View this run on GitHub: https://github.com/ArthurMachado2501/Germinaflix/actions/runs/42606045502
