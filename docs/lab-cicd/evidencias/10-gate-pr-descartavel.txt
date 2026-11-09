@@ -1,0 +1,3 @@
+{"conclusion":"failure","event":"pull_request","jobs":[{"conclusion":"failure","name":"ci"},{"conclusion":"skipped","name":"deploy"}],"url":"https://github.com/ArthurMachado2501/Germinaflix/actions/runs/42606298085"}
+ci	Conferir links locais	2026-11-09T11:06:34.7225078Z ✗ 1 problema(s) de link local:
+ci	Conferir links locais	2026-11-09T11:06:34.7225758Z   sobre_o_desenvolvedor.html:48 src="./imgs/Alee.jpg" -> arquivo não existe (ou grafia diferente)
