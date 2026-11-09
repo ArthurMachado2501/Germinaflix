@@ -1,0 +1,17 @@
+{
+  "name": "germinaflix",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo estático de filmes Achados do Tutu",
+  "scripts": {
+    "lint": "html-validate \"*.html\"",
+    "check:links": "node scripts/check-links.mjs",
+    "test": "npm run lint && npm run check:links"
+  },
+  "devDependencies": {
+    "html-validate": "^11.21.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
